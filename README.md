@@ -20,6 +20,7 @@ This is a resume analyzer built to see how well a resume stacks up against a spe
 
 ## Project Structure
 AI_ResumeAnalyzer/
+
 │── app.py                 # The main Streamlit web app
 
 │── resume_parser.py       # Code to read text from PDFs and DOCX files
