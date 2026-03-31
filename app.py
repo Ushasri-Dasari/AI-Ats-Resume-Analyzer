@@ -74,7 +74,7 @@ st.markdown("<br>", unsafe_allow_html=True)
 
 col1, col2, col3 = st.columns([1, 1.5, 1])
 with col2:
-    analyze = st.button("✨ Analyze Resume", type="primary", use_container_width=True)
+    analyze = st.button("Analyze Resume", type="primary", use_container_width=True)
 
 # ---------- END STARTING UI ----------
 

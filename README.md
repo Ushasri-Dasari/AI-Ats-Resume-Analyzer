@@ -54,9 +54,8 @@ streamlit run app.py
 ```
 
 ## Screenshots
-*(Drop your project images here)*
 
-You can just upload images directly in GitHub by dragging and dropping them while editing this file.
+![AI Resume Analyzer Layout](screenshot.png)
 
 ## Future Improvements
 - Add a system that recommends jobs directly to you
