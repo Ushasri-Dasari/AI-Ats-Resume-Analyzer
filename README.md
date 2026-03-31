@@ -19,7 +19,6 @@ This is a resume analyzer built to see how well a resume stacks up against a spe
 - Custom CSS for styling
 
 ## Project Structure
-```text
 AI_ResumeAnalyzer/
 │── app.py                 # The main Streamlit web app
 │── resume_parser.py       # Code to read text from PDFs and DOCX files
@@ -29,7 +28,6 @@ AI_ResumeAnalyzer/
 │── sample_resumes/        # Folder with some test resumes
 │── requirements.txt       # List of libraries you need to install
 │── README.md              # This file right here
-```
 
 ## How to Run
 
@@ -64,6 +62,3 @@ streamlit run app.py
 
 ## Author
 Ushasri Dasari
-
-- GitHub: https://github.com/Ushasri-Dasari
-- LinkedIn: https://linkedin.com/in/ushasri02
