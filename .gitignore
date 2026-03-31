@@ -1,0 +1,18 @@
+# Environments
+venv/
+env/
+.env
+.venv
+__pycache__/
+*.pyc
+
+# IDEs
+.vscode/
+.idea/
+
+# Streamlit secrets (NEVER PUSH THESE)
+.streamlit/secrets.toml
+
+# OS Files
+.DS_Store
+Thumbs.db

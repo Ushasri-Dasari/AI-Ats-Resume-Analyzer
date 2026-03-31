@@ -1,0 +1,208 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+/* Global Reset */
+html, body, [class*="css"]  {
+    font-family: 'Outfit', sans-serif !important;
+}
+
+/* Background & Main App */
+[data-testid="stAppViewContainer"] {
+    background: linear-gradient(135deg, #f8fafc 0%, #edf2f8 100%) !important;
+    color: #334155 !important;
+}
+
+[data-testid="stHeader"] {
+    background: transparent !important;
+}
+
+/* Base text color */
+.stMarkdown p, .stMarkdown div, li {
+    color: #475569 !important;
+    font-size: 15px;
+}
+
+/* Premium Light Containers */
+div[data-testid="stVerticalBlockBorderWrapper"] {
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 16px !important;
+    box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.03), 0 2px 6px -1px rgba(0, 0, 0, 0.02) !important;
+    padding: 24px !important;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+div[data-testid="stVerticalBlockBorderWrapper"]:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.02) !important;
+    border: 1px solid #cbd5e1 !important;
+}
+
+/* Section Titles (used in app.py) */
+.section-title {
+    font-size: 17px !important;
+    font-weight: 600 !important;
+    color: #1e293b !important;
+    margin-bottom: 12px !important;
+    letter-spacing: 0.01em;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid #f1f5f9;
+    padding-bottom: 8px;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5 {
+    color: #0f172a !important;
+}
+
+/* Buttons */
+button[data-testid="baseButton-primary"] {
+    background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%) !important;
+    color: white !important;
+    font-weight: 600 !important;
+    border-radius: 10px !important;
+    padding: 12px 28px !important;
+    border: none !important;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.25) !important;
+    transition: all 0.25s ease !important;
+}
+
+button[data-testid="baseButton-primary"] p {
+    color: white !important;
+}
+
+button[data-testid="baseButton-primary"]:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 16px rgba(59, 130, 246, 0.35) !important;
+}
+
+/* Secondary/Tertiary buttons */
+button[data-testid="baseButton-tertiary"] {
+    color: #4f46e5 !important;
+    font-weight: 500 !important;
+}
+button[data-testid="baseButton-tertiary"]:hover p, button[data-testid="baseButton-tertiary"]:hover {
+    color: #3730a3 !important;
+    text-decoration: underline !important;
+}
+
+/* Text Area and inputs */
+textarea, div[data-baseweb="input"] > div {
+    background-color: #f8fafc !important;
+    border: 1px solid #cbd5e1 !important;
+    color: #1e293b !important;
+    border-radius: 10px !important;
+    transition: all 0.2s ease !important;
+}
+
+textarea:focus, div[data-baseweb="input"] > div:focus-within {
+    background-color: #ffffff !important;
+    border-color: #4f46e5 !important;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15) !important;
+}
+
+/* File Uploader area */
+[data-testid="stFileUploader"] > section {
+    border: 2px dashed #cbd5e1 !important;
+    background: #f8fafc !important;
+    border-radius: 12px !important;
+    transition: all 0.3s ease !important;
+}
+
+[data-testid="stFileUploader"] > section:hover {
+    border-color: #6366f1 !important;
+    background: #eff6ff !important;
+}
+
+/* File Uploader Text */
+[data-testid="stFileUploader"] small {
+    color: #64748b !important;
+}
+
+/* Base list item color in columns */
+[data-testid="stMarkdownContainer"] p {
+    color: #334155;
+}
+
+/* Badges */
+.skill-badge {
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    color: #1d4ed8 !important;
+    padding: 6px 14px;
+    border-radius: 20px;
+    margin: 4px 6px 4px 0;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.skill-badge:hover {
+    background: #dbeafe;
+    border-color: #93c5fd;
+    transform: translateY(-1px);
+}
+
+/* Missing Skills Badges outline style */
+.missing-badge-ats {
+    background: #fef2f2;
+    border: 1px dashed #fca5a5;
+    color: #b91c1c !important;
+    padding: 6px 14px;
+    border-radius: 20px;
+    margin: 4px 6px 4px 0;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.missing-badge-ats:hover {
+    background: #fee2e2;
+    border-color: #f87171;
+}
+
+/* Progress bar modern style */
+.stProgress > div > div > div > div {
+    background: linear-gradient(90deg, #3b82f6, #6366f1) !important;
+    border-radius: 8px;
+    transition: width 0.8s ease-in-out !important;
+}
+.stProgress > div {
+    background-color: #e2e8f0 !important;
+    border-radius: 8px;
+    height: 10px !important;
+}
+
+/* Match Score text */
+.match-score-value {
+    font-size: 28px;
+    font-weight: 700;
+    background: linear-gradient(to right, #1e293b, #3b82f6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: right;
+    line-height: 1;
+}
+
+/* Success/Error boxes */
+[data-testid="stAlert"] {
+    border-radius: 12px !important;
+    border: none !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+/* Hide Streamlit top padding and footer */
+.stApp > header {
+    background-color: transparent !important;
+}
+footer {
+    display: none !important;
+}
+.stApp .block-container {
+    padding-top: 2rem !important;
+}
