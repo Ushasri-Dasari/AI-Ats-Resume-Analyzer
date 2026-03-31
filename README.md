@@ -1,58 +1,70 @@
-# 📄 AI Resume Analyzer
+# AI ATS Resume Analyzer  
+AI-powered tool to analyze resumes and improve ATS score using NLP
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)
+## 📌 Description
+This project is an AI-based ATS Resume Analyzer that evaluates resumes against job descriptions. It uses Natural Language Processing (NLP) techniques to extract skills, calculate ATS scores, and provide actionable suggestions to improve resume quality.
 
-An intelligent, sleek, and modern web application built with Python and Streamlit to help candidates optimize their resumes. It parses PDF and DOCX files, intelligently extracts technical skills, matches them against target job descriptions, and calculates a percentage-based **ATS (Applicant Tracking System) Matchscore.** Featuring a premium custom UI with real-time insightful feedback, it helps you quickly identify missing skills to increase your parsing success rates.
+## 🚀 Features
+- Resume parsing and text extraction (supports PDF and DOCX)
+- ATS score calculation based on required and preferred skills
+- Skill extraction using NLP techniques
+- Immediate resume improvement suggestions and ATS feedback
+- User-friendly, modern web interface with custom styling
 
-## ✨ Features
+## 🛠️ Tech Stack
+- Python  
+- NLP (Natural Language Processing with NLTK)  
+- Scikit-Learn
+- Streamlit (Web Framework)
+- Custom CSS (for premium UI styling)
 
-- **📤 Upload Resume:** Drag-and-drop parsing for both `.pdf` and `.docx` file formats.
-- **🧠 Extracted Resume Skills:** Uses natural language logic to correctly identify your technical abilities from plain text.
-- **🧩 Skill Categories:** Neatly organizes your detected skills into domain categories (Programming, ML, Cloud, Database, Web Dev).
-- **🎯 Job Description Skills:** Dynamically extracts the required and preferred skills directly from the pasted job description.
-- **✅ Matched & ❌ Missing Skills:** Clearly lists the overlap (what you have) and the gaps (what you need to learn or add to the resume).
-- **📊 Resume Matchscore:** Calculates an exact, weighted percentage ATS score based on the JD to see how you stack up.
-- **📝 ATS Feedback:** Provides immediate, color-coded alerts and distinctly highlights the most critical missing skills so you know exactly what to improve before applying.
+## 📂 Project Structure
+```text
+AI_ResumeAnalyzer/
+│── app.py                 # Main Streamlit application
+│── resume_parser.py       # Logic for extracting text from PDF/DOCX
+│── text_preprocessing.py  # Text cleaning and NLP processing
+│── skills.py              # Skill extraction and matching logic
+│── styles.css             # Custom light-mode CSS styling
+│── sample_resumes/        # Directory for testing files
+│── requirements.txt       # Project dependencies
+│── README.md              # Project documentation
+```
 
-## 🎨 Premium UI
-Featuring a fully custom-styled, elegant light-theme interface. The application utilizes soft shadows, crisp typography (Outfit font), subtle border highlights, gradient buttons, and responsive animated containers to provide an exceptional user experience on top of the native Streamlit layout.
+## ▶️ How to Run
 
-## 🚀 Installation & Local Setup
+1. Clone the repository
+```bash
+git clone https://github.com/Ushasri-Dasari/AI-Ats-Resume-Analyzer.git
+```
 
-1. **Clone this repository**
-   ```bash
-   git clone https://github.com/Ushasri-Dasari/AI-Ats-Resume-Analyzer.git
-   cd AI-Ats-Resume-Analyzer
-   ```
+2. Navigate to the folder
+```bash
+cd AI-Ats-Resume-Analyzer
+```
 
-2. **Create and Activate a Virtual Environment** (Recommended)
-   ```bash
-   # On Windows
-   python -m venv venv
-   .\venv\Scripts\activate
+3. Install dependencies
+```bash
+pip install -r requirements.txt
+```
 
-   # On macOS/Linux
-   python3 -m venv venv
-   source venv/bin/activate
-   ```
+4. Run the project
+```bash
+streamlit run app.py
+```
 
-3. **Install the Requirements**
-   ```bash
-   pip install -r requirements.txt
-   ```
+## 📷 Screenshots
+*(Add your project images here)*
 
-4. **Run the Application**
-   ```bash
-   streamlit run app.py
-   ```
-   The application will instantly launch in your default web browser at `http://localhost:8501`.
+👉 *Upload images in GitHub → drag & drop directly into this section*
 
-## 🛠️ Technology Stack
-- **Dashboard Framework:** [Streamlit](https://streamlit.io/)
-- **Text Processing:** `nltk`, `scikit-learn`
-- **File Parsing:** `PyPDF2`, `python-docx`
-- **Styling:** Custom CSS Injection
+## 🌟 Future Improvements
+- Add job recommendation system  
+- Improve accuracy using deep learning  
+- Deploy as a live web application  
 
----
-*Developed by Ushasri Dasari*
+## 👩‍💻 Author
+**Ushasri Dasari**  
+
+- GitHub: https://github.com/Ushasri-Dasari  
+- LinkedIn: https://linkedin.com/in/ushasri02 
