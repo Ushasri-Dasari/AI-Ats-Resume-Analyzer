@@ -1,70 +1,70 @@
-# AI ATS Resume Analyzer  
-AI-powered tool to analyze resumes and improve ATS score using NLP
+# AI ATS Resume Analyzer
+An AI tool to compare your resume against a job description and give you an ATS match score.
 
-## 📌 Description
-This project is an AI-based ATS Resume Analyzer that evaluates resumes against job descriptions. It uses Natural Language Processing (NLP) techniques to extract skills, calculate ATS scores, and provide actionable suggestions to improve resume quality.
+## Description
+This is a resume analyzer built to see how well a resume stacks up against a specific job description. It basically reads your resume, compares it against the job you want, and gives you an ATS score. It also picks out the skills you have and tells you what you're missing, which is super handy for tweaking your resume before actually applying somewhere.
 
-## 🚀 Features
-- Resume parsing and text extraction (supports PDF and DOCX)
-- ATS score calculation based on required and preferred skills
-- Skill extraction using NLP techniques
-- Immediate resume improvement suggestions and ATS feedback
-- User-friendly, modern web interface with custom styling
+## Features
+- Reads your resume, whether it's a PDF or DOCX file
+- Calculates an ATS match score based on what the job actually asks for
+- Pulls out your specific skills using some basic NLP techniques
+- Tells you exactly what skills to add to improve your chances
+- Has a really clean, straightforward web interface
 
-## 🛠️ Tech Stack
-- Python  
-- NLP (Natural Language Processing with NLTK)  
+## Tech Stack
+- Python
+- NLP (using NLTK)
 - Scikit-Learn
-- Streamlit (Web Framework)
-- Custom CSS (for premium UI styling)
+- Streamlit (handles the web interface)
+- Custom CSS for styling
 
-## 📂 Project Structure
+## Project Structure
 ```text
 AI_ResumeAnalyzer/
-│── app.py                 # Main Streamlit application
-│── resume_parser.py       # Logic for extracting text from PDF/DOCX
-│── text_preprocessing.py  # Text cleaning and NLP processing
-│── skills.py              # Skill extraction and matching logic
-│── styles.css             # Custom light-mode CSS styling
-│── sample_resumes/        # Directory for testing files
-│── requirements.txt       # Project dependencies
-│── README.md              # Project documentation
+│── app.py                 # The main Streamlit web app
+│── resume_parser.py       # Code to read text from PDFs and DOCX files
+│── text_preprocessing.py  # Cleans up the text before processing
+│── skills.py              # Figures out which skills match
+│── styles.css             # Makes the app look nice with a clean theme
+│── sample_resumes/        # Folder with some test resumes
+│── requirements.txt       # List of libraries you need to install
+│── README.md              # This file right here
 ```
 
-## ▶️ How to Run
+## How to Run
 
 1. Clone the repository
 ```bash
 git clone https://github.com/Ushasri-Dasari/AI-Ats-Resume-Analyzer.git
 ```
 
-2. Navigate to the folder
+2. Go into the project folder
 ```bash
 cd AI-Ats-Resume-Analyzer
 ```
 
-3. Install dependencies
+3. Install the required libraries
 ```bash
 pip install -r requirements.txt
 ```
 
-4. Run the project
+4. Start the app
 ```bash
 streamlit run app.py
 ```
 
-## 📷 Screenshots
-*(Add your project images here)*
+## Screenshots
+*(Drop your project images here)*
 
-👉 *Upload images in GitHub → drag & drop directly into this section*
+You can just upload images directly in GitHub by dragging and dropping them while editing this file.
 
-## 🌟 Future Improvements
-- Add job recommendation system  
-- Improve accuracy using deep learning  
-- Deploy as a live web application  
+## Future Improvements
+- Add a system that recommends jobs directly to you
+- Try out deep learning to make the skill matching even more accurate
+- Get it hosted online so people don't have to download the code to use it
 
-## 👩‍💻 Author
-**Ushasri Dasari**  
+## Author
+Ushasri Dasari
 
-- GitHub: https://github.com/Ushasri-Dasari  
-- LinkedIn: https://linkedin.com/in/ushasri02 
+- GitHub: https://github.com/Ushasri-Dasari
+- LinkedIn: https://linkedin.com/in/ushasri02
