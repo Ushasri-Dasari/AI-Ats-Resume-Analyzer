@@ -21,12 +21,19 @@ This is a resume analyzer built to see how well a resume stacks up against a spe
 ## Project Structure
 AI_ResumeAnalyzer/
 │── app.py                 # The main Streamlit web app
+
 │── resume_parser.py       # Code to read text from PDFs and DOCX files
+
 │── text_preprocessing.py  # Cleans up the text before processing
+
 │── skills.py              # Figures out which skills match
+
 │── styles.css             # Makes the app look nice with a clean theme
+
 │── sample_resumes/        # Folder with some test resumes
+
 │── requirements.txt       # List of libraries you need to install
+
 │── README.md              # This file right here
 
 ## How to Run
