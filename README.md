@@ -52,9 +52,8 @@ streamlit run app.py
 ```
 
 ## Screenshots
-1.uploade resume and job description of the role.
+uploade resume and job description of the role.
 ![AI Resume Analyzer Layout](screenshot.png)
-2.The result
 
 
 ## Future Improvements
